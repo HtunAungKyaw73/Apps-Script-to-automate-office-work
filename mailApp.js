@@ -36,7 +36,7 @@ function sendMail() {
   {
     const subject = mailData[0][1];
     let body = mailData[1][1];
-    // let id = data[i][0];
+    let id = data[i][0];
     let name = data[i][1];
     let email = data[i][2];
     let fileUrls = data[i][3];
