@@ -45,6 +45,8 @@ function sendMail() {
     body = "Dear " + name + ",\n\n" + body;
     // Logger.log("%s\n%s", subject, body);
 
+    // for fileUrls, we assume it is a comma-separated string of file URLs for multiple attachments
+    // Example: "https://drive.google.com/file/d/FILE_ID/view?usp=sharing, https://drive.google.com/file/d/ANOTHER_FILE_ID/view?usp=sharing"
     let urls = fileUrls.toString().split(",");
     // Logger.log(urls);
 
